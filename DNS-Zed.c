@@ -104,12 +104,11 @@ void PortScan()
 	{
 		system("color c");
 		printf("\a\a\a");
-		printf("> Op�ao %i invalida.\n",escolha);
+		printf("> Opção %i invalida.\n",escolha);
 		printf("> Tente de novo...\n");
-		Sleep(3000);
+		Sleep(5000);
 		system("color 7");
 		system("pause");
-		bool a = true;
 	}
 
 	if(escolha == 0)
@@ -144,11 +143,9 @@ void PortScan()
 			printf("\a\a\a");
 			printf("\t\t> ATENCAO ==> ENTRE SOMENTE COM IP.\n");
 			printf("\t\t> ATENCAO ==> CASO PRECISE RESOLVER DNS USE ""RESOLVE-DNS"" \n");
-			printf("> Saindo...\n");
-			Sleep(3000);
+			Sleep(5000);
 			system("color 7");
 			system("pause");
-			bool a = true;
 
 		}
 		else
@@ -167,11 +164,9 @@ void PortScan()
 				printf("\a\a\a");
 				printf("\t\t> ATENCAO ==> ENTRE SOMENTE COM IP.\n");
 				printf("\t\t> ATENCAO ==> CASO PRECISE RESOLVER DNS USE ""RESOLVE-DNS"" \n");
-				printf("> Saindo...\n");
-				Sleep(3000);
-				system("color 7");
+        system("color 7");
+				Sleep(5000);
 				system("pause");
-				bool a = true;
 			}
 
 		}
@@ -203,7 +198,6 @@ void PortScan()
    				closesocket(sock);
    				closesocket(conecta);
 					system("pause");
-   				bool a = true;
 
 		}
 		else
@@ -216,7 +210,6 @@ void PortScan()
 				closesocket(sock);
 				closesocket(conecta);
 				system("pause");
-				bool a = true;
 		}
 
 
@@ -272,7 +265,6 @@ void PortScan()
 			{
 				system("color 7");
 				system("pause");
-				bool a = true;
 			}
 
 		}
@@ -353,7 +345,6 @@ void PortScan()
 
 		system("color 7");
 		system("pause");
-		bool a = true;
 
 	}
 
@@ -404,12 +395,10 @@ void ResolveDNS()
 		printf("\a");
 		system("color a");
 		printf("> Host: %s IP: %s\n",url , inet_ntoa(*((struct in_addr *)host->h_addr)));
-		printf("> Saindo...\n");
 
-		Sleep(3000);
+		Sleep(5000);
 		system("color 7");
 		system("pause");
-		bool a = true;
 	}
 	else
 	{
@@ -424,13 +413,12 @@ void ResolveDNS()
 		printf("\a");
 		system("color a");
 		printf("> Host: %s IP: %s\n",url , inet_ntoa(*((struct in_addr *)host->h_addr)));
-		printf("> Saindo...\n");
 
-		Sleep(3000);
+		Sleep(5000);
 
 
 		system("color 7");
-		bool a = true;
+		system("pause");
 	}
 }
 
@@ -469,11 +457,9 @@ void BrutalDNS()
 		system("color c");
 		printf("\t\t(-) ATENCAO ==> NAO USE https://www. OU www.\n");
 		printf("\t\t(-) ATENCAO ==> USE APENAS nomedosite.com POR EXEMPLO.\n");
-		printf(">Saindo...\n");
-		Sleep(3000);
+		Sleep(5000);
 		system("pause");
 		system("color 7");
-		bool a = true;
 	}
 	else
 	{
@@ -490,11 +476,9 @@ void BrutalDNS()
 			system("color c");
 			printf("\t\t(-) ATENCAO ==> NAO USE https://www. OU www.\n");
 			printf("\t\t(-) ATENCAO ==> USE APENAS nomedosite.com POR EXEMPLO.\n");
-			printf(">Saindo...\n");
-			Sleep(3000);
+			Sleep(5000);
 			system("pause");
 			system("color 7");
-			bool a = true;
 		}
 
 	}
@@ -509,11 +493,9 @@ void BrutalDNS()
 		printf("\a\a\a");
 		system("color c");
 		printf("> Arquivo nao encontrado.\n");
-		printf("> Saindo...\n");
-		Sleep(3000);
+		Sleep(5000);
 		system("pause");
 		system("color 7");
-		bool a = true;
 	}
 
 	printf("\n");
